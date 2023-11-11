@@ -63,7 +63,8 @@ function downloadURI3()
     var link = document.createElement("a");
     // If you don't know the name or want to use
     // the webserver default set name = ''
-    uri="website/files/movementvrapk.apk";
+ //   uri="website/files/movementvrapk.apk";
+	uri=https://www.dropbox.com/scl/fi/eyxwr391ackyk4axa0leh/movementvrapk.apk?rlkey=hkrd06nbar05md9gp17qi3pcx&dl=0";
     link.setAttribute('download', 'movementvrapk.apk');
     link.href = uri;
     document.body.appendChild(link);
