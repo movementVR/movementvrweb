@@ -133,6 +133,40 @@ failed
 <name> </name> <inputs> </inputs>  
 
 
+
+<!-- Expandable Feedback Message Position -->
+ 
+       <button class="expand-button"  type="button" onclick="toggleExpandableWindow(this,'expandableOutcomeMessagePositions')">
+        Expand message position & size
+        </button>
+ 
+        <inputcolumn>
+        <div class="expwindow" id="expandableOutcomeMessagePositions"> 
+
+ 
+           <name> Success </name> <inputs></inputs>	   
+           <name> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - - > Position [meters] </name>
+   			<inputs>
+   			<label for="MSGSUCC_POS_X">X:</label>
+			<input id="MSGSUCC_POS_X" name="setupScript,successMessagePositionX" type="number" value="0.4" />
+			<label for="MSGSUCC_POS_Y">Y:</label>
+			<input id="MSGSUCC_POS_Y" name="setupScript,successMessagePositionY" type="number" value="0.3" />
+			<label for="MSGSUCC_POS_Z">Z:</label>
+			<input id="MSGSUCC_POS_Z" name="setupScript,successMessagePositionZ" type="number" value="0.6" />
+   			</inputs>  	   
+           <name> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - - > Size </name>
+   			<inputs>
+   			<label for="MSGSUCC_POS_X">Width [meters]:</label>
+			<input id="MSGSUCC_POS_X" name="setupScript,successMessageSizeX" type="number" value="0.55" />
+			<label for="MSGSUCC_POS_Y">Height [meters]:</label>
+			<input id="MSGSUCC_POS_Y" name="setupScript,successMessageSizeY" type="number" value="0.4" />
+			<label for="MSGSUCC_POS_Z">Font Size:</label>
+			<input id="MSGSUCC_POS_Z" name="setupScript,successMessageFontSize" type="number" value="1" />
+   			</inputs>  
+		
+ 	</div>
+  	</inputcolumn>
+
  
   </div>
      
