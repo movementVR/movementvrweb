@@ -67,10 +67,9 @@ document.querySelector('#INPUT_FEEDBACK').insertAdjacentHTML('beforeend', `
 
 
    			<inputs>
-			<input id="OMH" name="trialScript,stage5_outcomeMessageDuration" type="hidden" value="FALSE">
-			<input id="OM" name="trialScript,stage5_outcomeMessageDuration" type="checkbox" value="TRUE" checked>	
-			<label for="OM">Yes</label>	
- 
+			<input id="OMH" name="trialScript,stage5_displayMessageFlag" type="hidden" value="FALSE">
+			<input id="OM" name="trialScript,stage5_displayMessageFlag" type="checkbox" value="TRUE" checked>	
+			<label for="OM">Yes</label>	 
  
 
 
@@ -163,6 +162,80 @@ failed
 			<input id="BIRDVOL" name="setupScript,targetBirdVolume" type="number" value="1" />
    			</inputs>      
    		        <note>Change sounds by replacing failure and success mp3 files in Resources</note>    
+
+
+ 
+	<name>Change bird:</name> 
+	<inputs>
+		<input id="CHANGEBIRD_ANY" name="trialScript,changeBirdAnyCondition" type="radio" value="TRUE"  checked >
+		<label for="CHANGEBIRD_ANY">After every trial</label> 
+		<input id="CHANGEBIRD_ANYF" name="trialScript,changeBirdAnyCondition" type="radio" value="FALSE" >
+		<label for="CHANGEBIRD_ANYF">For selected conditions (expand below) </label>  
+   	</inputs>
+
+ 
+
+<!-- Expandable Change Bird Condition -->
+ 
+       <button class="expand-button"  type="button" onclick="toggleExpandableWindow(this,'expandableChangeBird')">
+        Expand conditions for changing bird
+        </button>
+ 
+        <inputcolumn>
+        <div class="expwindow" id="expandableChangeBird"> 
+ 
+ <name>Change bird for conditions:</name> <inputs></inputs>  
+ 
+ <name> </name> <inputs> 
+ <input id="OMH" name="trialScript,changeBirdOnSuccess" type="hidden" value="FALSE">
+<input id="OM" name="trialScript,changeBirdOnSuccess" type="checkbox" value="TRUE" checked>	
+<label for="OM">Success</label>	 
+ </inputs>  
+
+ 
+ <name> </name> <inputs> 
+ <input id="OMH" name="trialScript,changeBirdOnFailure1" type="hidden" value="FALSE">
+<input id="OM" name="trialScript,changeBirdOnFailure1" type="checkbox" value="TRUE" checked>	
+<label for="OM">Failure - Plate too tilted</label>	 
+ </inputs>  
+
+
+ <name> </name> <inputs> 
+ <input id="OMH" name="trialScript,changeBirdOnFailure2" type="hidden" value="FALSE">
+<input id="OM" name="trialScript,changeBirdOnFailure2" type="checkbox" value="TRUE" checked>	
+<label for="OM">Failure - Plate exited target</label>	 
+ </inputs>  
+
+
+ <name> </name> <inputs> 
+ <input id="OMH" name="trialScript,changeBirdOnFailure3" type="hidden" value="FALSE">
+<input id="OM" name="trialScript,changeBirdOnFailure3" type="checkbox" value="TRUE" checked>	
+<label for="OM">Failure - Plate fell</label>	 
+ </inputs>  
+	    
+
+
+ <name> </name> <inputs> 
+ <input id="OMH" name="trialScript,changeBirdOnFailure4" type="hidden" value="FALSE">
+<input id="OM" name="trialScript,changeBirdOnFailure4" type="checkbox" value="TRUE" checked>	
+<label for="OM">Failure - Time limit reached</label>	 
+ </inputs>  
+
+
+
+ <name> </name> <inputs> 
+ <input id="OMH" name="trialScript,changeBirdOnFailure5" type="hidden" value="FALSE">
+<input id="OM" name="trialScript,changeBirdOnFailure5" type="checkbox" value="TRUE" checked>	
+<label for="OM">Failure - Workspace exited</label>	 
+ </inputs>  
+ 
+		
+ 	</div>
+  	</inputcolumn>
+
+ 
+
+
 		   </div>
      
 
