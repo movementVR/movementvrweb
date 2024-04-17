@@ -15,8 +15,10 @@ document.querySelector('#INPUT_HANDS').insertAdjacentHTML('beforeend', `
 			<label for="MULTIPLECHOICE_QUEST">Quest</label> 
 			<input id="MULTIPLECHOICE_LEAP" name="setupScript,rigSystem" type="radio" value="Leap" >
 			<label for="MULTIPLECHOICE_LEAP">Leap</label>		    
-   			</inputs>            
-			<name>Active hands:</name>
+   			</inputs>      
+   		    <note> </note>   
+   		    <note> </note>         
+			<name>Hands used in task:</name>
    			<inputs>	    	  	    
 			<input id="ACTIVE_L_H" name="handsAndSaveScript,leftHandActiveFlag" type="hidden" value="FALSE">
 			<input id="ACTIVE_L" name="handsAndSaveScript,leftHandActiveFlag" type="checkbox" value="TRUE" checked>	
@@ -24,7 +26,11 @@ document.querySelector('#INPUT_HANDS').insertAdjacentHTML('beforeend', `
 			<input id="ACTIVE_R_H" name="handsAndSaveScript,rightHandActiveFlag" type="hidden" value="FALSE">
 			<input id="ACTIVE_R" name="handsAndSaveScript,rightHandActiveFlag" type="checkbox" value="TRUE" checked>	
 			<label for="ACTIVE_R">Right</label>	  
-   			</inputs>             
+   			</inputs> 
+   		    <note>Check both for bimanual tasks, check one for unimanual</note>  
+   		    <note>Unchecked hands are not be visible in VR & cannot interact with objects</note> 
+   		    <note> </note>  
+   		    <note> </note>                   
 			<name>Required to be tracked:</name>
    			<inputs>	    	  	    
 			<input id="TRACKED_L_H" name="handsAndSaveScript,leftHandTrackingFlag" type="hidden" value="FALSE">
@@ -42,10 +48,23 @@ document.querySelector('#INPUT_HANDS').insertAdjacentHTML('beforeend', `
     		  <inputdivider> Data saving </inputdivider>
 		  <div class="form-control">        
 			<name>Save for each frame:</name>
+            <inputs>	    	  	    
+			<input id="SAVE_BASICS" name="handsAndSaveScript,saveBasicData" type="hidden" value="FALSE">
+			<input id="SAVE_BASICS" name="handsAndSaveScript,saveBasicData" type="checkbox" value="TRUE" checked>	
+			<label for="SAVE_BASICS">Basic data (wrist, plate, & headset positions) </label>	  
+   			</inputs>       
+			<name></name>
+
    			<inputs>	    	  	    
 			<input id="SAVE_PERTURBATION" name="handsAndSaveScript,savePerturbationOffset" type="hidden" value="FALSE">
 			<input id="SAVE_PERTURBATION" name="handsAndSaveScript,savePerturbationOffset" type="checkbox" value="TRUE" checked>	
 			<label for="SAVE_PERTURBATION">Hand perturbation offsets</label>	  
+   			</inputs>       
+			<name></name>
+            <inputs>	    	  	    
+			<input id="SAVE_FINGERTIPPOS" name="handsAndSaveScript,saveFingertipPosition" type="hidden" value="FALSE">
+			<input id="SAVE_FINGERTIPPOS" name="handsAndSaveScript,saveFingertipPosition" type="checkbox" value="TRUE" checked>	
+			<label for="SAVE_FINGERTIPPOS">Fingertip positions</label>	  
    			</inputs>       
 			<name></name>
    			<inputs>	
@@ -59,7 +78,8 @@ document.querySelector('#INPUT_HANDS').insertAdjacentHTML('beforeend', `
 			<input id="SAVE_COLLIDER" name="handsAndSaveScript,saveBoneColliderShapes" type="checkbox" value="TRUE" checked>	
 			<label for="SAVE_COLLIDER">All bone shapes</label>	  
    			</inputs> 
-   		        <note>Wrist and headset position is always saved.</note>   
+   		        
+   		    <note> </note>   
 		   </div>
 
 	</inputcolumn> 

@@ -171,7 +171,9 @@ failed
 		    <input id="MSGSUCC_TYPE_B" name="setupScript,successMessageType" type="radio" value="cartoon"  checked >
   		    <label for="MSGSUCC_TYPE_B">Cartoon</label> 
 		    <input id="MSGSUCC_TYPE_B2" name="setupScript,successMessageType" type="radio" value="rectangle" >
-		    <label for="MSGSUCC_TYPE_B2">Rectangle</label>                
+		    <label for="MSGSUCC_TYPE_B2">Rectangle</label>                 
+		    <input id="MSGSUCC_TYPE_B0" name="setupScript,successMessageType" type="radio" value="none" >
+  		    <label for="MSGSUCC_TYPE_B0">None</label>                 
    	        <label for="MSGSUCC_ROT_B">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rotation [deg]:</label>
 			<input id="MSGSUCC_ROT_B" name="setupScript,successMessageBackgroundRotationZ" type="number" value="0" />   			
    			</inputs>  
@@ -240,7 +242,9 @@ failed
 		    <input id="MSGFAIL1_TYPE_B" name="setupScript,fail1MessageType" type="radio" value="cartoon"  checked >
   		    <label for="MSGFAIL1_TYPE_B">Cartoon</label> 
 		    <input id="MSGFAIL1_TYPE_B2" name="setupScript,fail1MessageType" type="radio" value="rectangle" >
-		    <label for="MSGFAIL1_TYPE_B2">Rectangle</label>                
+		    <label for="MSGFAIL1_TYPE_B2">Rectangle</label>                        
+		    <input id="MSGFAIL1_TYPE_B0" name="setupScript,fail1MessageType" type="radio" value="none" >
+  		    <label for="MSGFAIL1_TYPE_B0">None</label>          
    	        <label for="MSGFAIL1_ROT_B">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rotation [deg]:</label>
 			<input id="MSGFAIL1_ROT_B" name="setupScript,fail1MessageBackgroundRotationZ" type="number" value="0" />   			
    			</inputs>  
@@ -308,7 +312,9 @@ failed
 		    <input id="MSGFAIL2_TYPE_B" name="setupScript,fail2MessageType" type="radio" value="cartoon"  checked >
   		    <label for="MSGFAIL2_TYPE_B">Cartoon</label> 
 		    <input id="MSGFAIL2_TYPE_B2" name="setupScript,fail2MessageType" type="radio" value="rectangle" >
-		    <label for="MSGFAIL2_TYPE_B2">Rectangle</label>                
+		    <label for="MSGFAIL2_TYPE_B2">Rectangle</label>                          
+		    <input id="MSGFAIL2_TYPE_B0" name="setupScript,fail2MessageType" type="radio" value="none" >
+  		    <label for="MSGFAIL2_TYPE_B0">None</label>        
    	        <label for="MSGFAIL2_ROT_B">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rotation [deg]:</label>
 			<input id="MSGFAIL2_ROT_B" name="setupScript,fail2MessageBackgroundRotationZ" type="number" value="0" />   			
    			</inputs>  
@@ -377,7 +383,9 @@ failed
 		    <input id="MSGFAIL3_TYPE_B" name="setupScript,fail3MessageType" type="radio" value="cartoon"  checked >
   		    <label for="MSGFAIL3_TYPE_B">Cartoon</label> 
 		    <input id="MSGFAIL3_TYPE_B2" name="setupScript,fail3MessageType" type="radio" value="rectangle" >
-		    <label for="MSGFAIL3_TYPE_B2">Rectangle</label>                
+		    <label for="MSGFAIL3_TYPE_B2">Rectangle</label>                              
+		    <input id="MSGFAIL3_TYPE_B0" name="setupScript,fail3MessageType" type="radio" value="none" >
+  		    <label for="MSGFAIL3_TYPE_B0">None</label>    
    	        <label for="MSGFAIL3_ROT_B">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rotation [deg]:</label>
 			<input id="MSGFAIL3_ROT_B" name="setupScript,fail3MessageBackgroundRotationZ" type="number" value="0" />   			
    			</inputs>  
@@ -445,7 +453,9 @@ failed
 		    <input id="MSGFAIL4_TYPE_B" name="setupScript,fail4MessageType" type="radio" value="cartoon"  checked >
   		    <label for="MSGFAIL4_TYPE_B">Cartoon</label> 
 		    <input id="MSGFAIL4_TYPE_B2" name="setupScript,fail4MessageType" type="radio" value="rectangle" >
-		    <label for="MSGFAIL4_TYPE_B2">Rectangle</label>                
+		    <label for="MSGFAIL4_TYPE_B2">Rectangle</label>                      
+		    <input id="MSGFAIL4_TYPE_B0" name="setupScript,fail4MessageType" type="radio" value="none" >
+  		    <label for="MSGFAIL4_TYPE_B0">None</label>            
    	        <label for="MSGFAIL4_ROT_B">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rotation [deg]:</label>
 			<input id="MSGFAIL4_ROT_B" name="setupScript,fail4MessageBackgroundRotationZ" type="number" value="0" />   			
    			</inputs>  
@@ -514,7 +524,9 @@ failed
 		    <input id="MSGFAIL5_TYPE_B" name="setupScript,fail5MessageType" type="radio" value="cartoon"  checked >
   		    <label for="MSGFAIL5_TYPE_B">Cartoon</label> 
 		    <input id="MSGFAIL5_TYPE_B2" name="setupScript,fail5MessageType" type="radio" value="rectangle" >
-		    <label for="MSGFAIL5_TYPE_B2">Rectangle</label>                
+		    <label for="MSGFAIL5_TYPE_B2">Rectangle</label>                  
+		    <input id="MSGFAIL5_TYPE_B0" name="setupScript,fail5MessageType" type="radio" value="none" >
+  		    <label for="MSGFAIL5_TYPE_B0">None</label>    
    	        <label for="MSGFAIL5_ROT_B">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rotation [deg]:</label>
 			<input id="MSGFAIL5_ROT_B" name="setupScript,fail5MessageBackgroundRotationZ" type="number" value="0" />   			
    			</inputs>  

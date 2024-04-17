@@ -185,6 +185,8 @@ document.querySelector('#INPUT_STYLE').insertAdjacentHTML('beforeend', `
                 padding-right: 10px;
                 padding-bottom: 0px;
 		margin: 0px;
+        vertical-align: top;
+
       		} 
 	
   		.tabcontent inputcolumn inputs {
