@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="en"> 
+   
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content=
 		"width=device-width, initial-scale=1.0">
-
+ 
+<title>MovementVR</title>
+<link rel="stylesheet" type="text/css" href="styles.css"  >
+<link rel="stylesheet" type="text/css" href="trialDesignStyles.css" > 
  
 	<style>
 		
@@ -68,8 +72,10 @@
 		/* Style of the overall container for every page  */
 		.pagecontainer{			
 		  margin: auto;
-	          width: 1300px;		
+	          width: 1000px;		
     		  text-align: left;
+            padding-right: 20px;
+            padding-left: 20px;
 		}
 
 	</style>
@@ -81,6 +87,9 @@
 <body>
 
 
+<!-- Content: &nbsp;   &ensp; and &emsp; --> 
+
+    
 	<!-- OVERALL TOP NAVIGATION MENU -->
 	<div class="parenttab">
 		
@@ -114,6 +123,10 @@
 
 	<!-- PAGE FOR INPUT FILES CREATION -->
 	<div id="INPUT_PAGE" class="pagecontainer"></div>	
+        <script src="generalScript.js"></script>
+        <script src="trialDesignDefinition.js"></script>
+        <script src="trialDesignScript.js"></script>
+    
 	<script src='website/page_input.js'></script>  
         <script src='website/inputpage/input_task.js'></script>  
         <script src='website/inputpage/input_hands.js'></script>
@@ -143,7 +156,8 @@
 	
 		function openPage(selectedPageID,selectedPageLink) {
 			
-		  	allPages = document.getElementsByClassName("pagecontainer"); // initialized allPages variable			
+		  	allPages = document.getElementsByClassName("pagecontainer"); // initialized allPages variable
+            console.log('AA CLOSE');
 		  	for (i = 0; i < allPages.length; i++) {   // "closes" all the pages
 		    		allPages[i].style.display = "none";
 		  	}
