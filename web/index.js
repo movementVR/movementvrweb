@@ -68,7 +68,7 @@ function populateTabPage(name){
     pageContainer.className = 'pagecontainer';
     pageContainer.id = name+'_tabID';
     document.body.appendChild(pageContainer);
-    const folderPath='web/'+name;
+    const folderPath='movementvrweb/web/'+name;
     const htmlFileName=folderPath+'/'+name+'.html'; 
     const jsonPath=folderPath+'/'+name+'.json';  
     const generalJsonPath='web/general/general.json'; 
